@@ -12,9 +12,10 @@ class Grapher:
         plot.ylabel("Valores de entrada")
         plot.xlabel("Amostragem")
     
-        for value in self.values:
-            plot.plot(value)
-
+        for i, value in enumerate(self.values):
+            plot.plot(value, label=f"Série {i}")
+        
+        plot.legend(loc="upper left")
         plot.show()
 
 if __name__ == "__main__":
