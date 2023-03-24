@@ -11,7 +11,10 @@ class Grapher:
         plot.title("Gráfico de linhas")
         plot.ylabel("Valores de entrada")
         plot.xlabel("Amostragem")
-        plot.plot(self.values)
+    
+        for value in self.values:
+            plot.plot(value)
+
         plot.show()
 
 if __name__ == "__main__":
