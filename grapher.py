@@ -8,9 +8,10 @@ class Grapher:
         self.values = values
 
     def graph(self):
-        plot.plot(self.values)
+        plot.title("Gráfico de linhas")
         plot.ylabel("Valores de entrada")
         plot.xlabel("Amostragem")
+        plot.plot(self.values)
         plot.show()
 
 if __name__ == "__main__":
